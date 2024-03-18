@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev, .next {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+
+
+
+.caja{
+  float: left;
+  width: calc(40% - 20px);
+  height: calc(100vh - 20px);;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 0vh;
+}
+
+.caja_hijo{
+  height: 60hv;
+  background-color: white;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.caja:nth-child(2n){
+  background: transparent;
+}
+
+.caja:nth-child(2n + 1){
+  background: transparent;
+}
+
+.label_titulo{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.label_subtitulo{
+  font-size: 15px;
+}
+
+.label_subtitulo2{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input_celular{
+  border-radius: 50px;
+  width: auto;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.input_dni{
+  border-radius: 50px;
+  width: auto;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.chck_terminos{
+  font-size: 12px;
+  color: blue;
+}
+
+.btn_llamame{
+  background-color: #d14d71; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.parentesis{
+  color: #d14d71;
+}
